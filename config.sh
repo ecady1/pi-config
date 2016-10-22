@@ -7,3 +7,5 @@ echo
 echo "you're running:"
 echo "$current_ver"
 echo
+echo "Test 1"
+echo
