@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Hi from GitHub"
+echo "Hi Eric -from GitHub"
 
 #let's get the current version of Raspbian
 current_ver=`uname -a`
