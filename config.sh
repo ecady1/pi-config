@@ -1,9 +1,12 @@
 #!/bin/bash
+clear
 echo
 echo "Hi from GitHub"
 echo
 echo "This Script will walk through some of the basic and tedious first steps with a new Raspberry Pi."
 echo "Let's start by doing some system software updates..."
+sleep 10
+
 
 #let's get the current version of Raspbian
 current_ver=`uname -a`
@@ -17,6 +20,9 @@ sudo apt-get update -y
 echo
 sudo apt-get dist-upgrade -y
 echo
+echo "After the updates you're running:"
+current_ver=`uname -a`
+echo "  $current_ver"
 
 echo
 echo "Now that updates are done, let's install some software:"
@@ -42,3 +48,6 @@ sudo apt-get install links -y
 echo
 
 #now to do the basic stuff, we can use the raspberry pi config script 
+echo "Now you'll be sent to the Raspberry Pi Software Configuration Tool to finish setup..."
+sudo raspi-config
+
