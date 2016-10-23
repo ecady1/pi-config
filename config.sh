@@ -46,6 +46,10 @@ echo "  Now installing Links..."
 echo
 sudo apt-get install links -y
 echo
+echo "  Now installing Git..."
+echo
+sudo apt-get install git -y
+echo
 
 #now to do the basic stuff, we can use the raspberry pi config script 
 echo "Now you'll be sent to the Raspberry Pi Software Configuration Tool to finish setup..."
