@@ -51,6 +51,23 @@ echo
 sudo apt-get install git -y
 echo
 
+#ask if a Raspberry Pi Camera is installed
+read -p "Are you using a Raspberry Pi Camera? (y/n): " camera_answer
+			if [ "$camera_answer" == "yes" -o "$camera_answer" == "y" ]; then
+
+				echo
+        echo "
+
+			elif [ "$camera_answer" == "no" -o "$camera_answer" == "n" ]; then
+
+				
+        
+      else
+      
+        echo "invalid response - please choose yes or no - exiting."
+			
+      fi
+
 #now to do the basic stuff, we can use the raspberry pi config script 
 echo "Now you'll be sent to the Raspberry Pi Software Configuration Tool to finish setup..."
 sudo raspi-config
